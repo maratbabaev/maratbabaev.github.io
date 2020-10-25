@@ -1,0 +1,298 @@
+
+@media (max-width: 1100px) {
+
+    .header_container {
+      width: 850px;
+    }
+    
+    .one {
+      height: 280px;
+    }
+    
+    .logo img {
+      width: 210px;
+    }
+    
+    .menu {
+      margin-top: 29px;
+    }
+    .menu_left {
+      width: 400px;
+    }
+    
+    .vector {
+      width: 9px;
+      height: 8px;
+      margin: 5px;
+    }
+    
+    .form_menu input {
+        width: 50px;
+    }
+    
+    .form_menu button {
+      padding: 24px 16px;
+  }
+    
+    .container {
+      width: 850px;
+    }
+    
+    .one {
+      height: 280px;
+    }
+    
+    .one_block {
+      height: 250px;
+    }
+    
+    .one_photo img {
+      height: 250px;
+    }
+    
+    .one_banner_text {
+      padding: 45px 20px;
+    }
+    
+    .one_str img {
+      height: 16px;
+    }
+    
+    .news h2 {
+      font-size: 12px;
+        line-height: 12px;
+        margin-bottom: 0px;
+    }
+    
+    .news_block h4 {
+      font-size: 10px;
+        line-height: 19px;
+        margin: 0px 0 3px 0;
+    }
+    
+    .news_block p {
+      font-size: 12px;
+        line-height: 14px;
+        margin-bottom: 8px;
+    }
+    
+    .two {
+      height: 250px;
+      margin: 0 0 30px 0;
+    }
+    
+    .two_block {
+      height: 250px;
+    }
+    
+    .two_banner {
+      height: 250px;
+    }
+    
+    .two_banner img {
+      height: 250px;
+    }
+    
+    .two_banner_text {
+      width: 300px;
+    }
+    
+    .in_city_two {
+      margin-bottom: 10px;
+    }
+    
+    .two_banner_text h2 {
+      font-size: 20px;
+      line-height: 23px;
+    }
+    
+    .two_right {
+      width: 460px;
+    }
+    
+    .two_right_block {
+      height: 123px;
+    }
+    
+    .two_right_banner img {
+      height: 123px;
+    }
+    
+    .two_right_text_top {
+      padding: 11px 10px;
+      height: 100px;
+    }
+    
+    .two_right_text h4 {
+      font-size: 15px;
+    }
+    
+    .two_right_text p {
+      font-weight: 300;
+      font-size: 11px;
+      line-height: 13px;
+    }
+    
+    .circle_inside_down img {
+      height: 13px;
+    }
+    
+    .circle_inside_down {
+      left: 75px;
+    }
+    
+    
+    .two_right_text_down {
+      height: 100px;
+      padding: 11px 10px;
+    }
+    
+    .three {
+      height: 270px;
+    }
+    
+    .three_list_block {
+      width: 202px;
+    }
+    
+    .three_list_block img {
+      height: 130px;
+    }
+    
+    .four {
+      height: 347px;
+      margin: 30px 0;
+    }
+    
+    .four_block {
+      height: 347px;
+    }
+    
+    .four_news {
+      width: 270px;
+    }
+    
+    .four_news_block {
+      height: 63px;
+        margin-bottom: 9px;
+    }
+    
+    .four_news_block h3 {
+      font-size: 9px;
+    }
+    
+    .four_news_block p {
+      font-size: 11px;
+      line-height: 11px;
+    }
+    
+    .four_news_block {
+      height: 63px;
+      margin-bottom: 9px;
+    }
+    
+    .four_center {
+      width: 270px;
+    }
+    
+    .four_center img {
+      width: 270px;
+    }
+    
+    .four_right {
+      width: 270px;
+    }
+    
+    .four_right img {
+      width: 270px;
+    }
+    
+    .four_right_down {
+      height: 173px;
+      margin-top: -4px;
+    }
+    
+    .four_right_down_inside {
+      padding: 25px 0 0 25px;
+    }
+    
+    .four_right_down h3 {
+      font-size: 18px;
+        line-height: 17px;
+    }
+    
+    .five {
+      height: 330px;
+      margin: 30px 0;
+    }
+    
+    .five_block {
+      height: 330px;
+    }
+    
+    .six {
+      height: 250px;
+    }
+    
+    .six_block {
+      height: 250px;
+    }
+    
+    .six_news {
+      width: 220px;
+    }
+    
+    .six_news img {
+      width: 220px;
+    }
+    
+    .six_news h3 {
+      font-size: 10px;
+        line-height: 11px;
+        margin-top: 8px;
+    }
+    
+    .six_news h4 {
+      font-size: 14px;
+      line-height: 16px;
+    }
+    
+    .six_news p {
+      font-size: 10px;
+      line-height: 14px;
+    }
+    
+    .load_more {
+      width: 400px;
+      height: 50px;
+      margin: 100px auto 100px;
+      border: 3px solid #45F0E9;
+      font-size: 15px;
+    }
+    
+    footer {
+      height: 250px;
+    }
+    
+    .footer_content {
+      width: 608px;
+    }
+    
+    .logo_footer {
+      margin: 26px 0 29px;
+      width: 110px;
+    }
+    
+    .footer_menu a {
+      font-size: 14px;
+    }
+    
+    .footer_content p {
+      font-size: 11px;
+      margin: 25px 0 30px;
+    }
+    
+    .footer_social img {
+      height: 15px;
+    }
+    }
