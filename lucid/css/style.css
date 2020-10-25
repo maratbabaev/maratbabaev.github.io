@@ -1307,3 +1307,170 @@ footer {
 
 
 
+
+
+@media screen and (max-width: 539px) {
+    
+    .main_right img {
+    width: 130px;
+}
+    
+    .main_left h2 { 
+    margin-top: 110px;
+}
+    
+   .main_left h1 {
+    font-size: 15px;
+} 
+    
+    .main_left p {
+    font-size: 12px;
+        line-height: 13px;
+}
+    
+    .main {
+    width: 100%;
+    height: 600px;
+    }
+    
+    .features-top h2 {
+    font-size: 25px;
+    }
+    
+    .features-block p {
+    font-size: 13px;
+    }
+    
+    .details-left img {
+    width: 100px;
+}
+   .details-right h2 {
+    font-size: 25px;
+} 
+    .details-right p {
+    font-size: 13px;
+        margin: 0;
+}
+    
+    .datails-list {
+    margin-top: 20px;
+    width: 100%;
+}
+    
+    .datails-list p {
+    font-size: 11px;
+}
+    
+  .details-top {
+    height: 450px;
+}  
+    
+    .details {
+    display: block;
+    }
+    
+    .details-left {
+    display: none;
+    }
+    
+    .details-right {
+    width: 100%;
+}
+    
+    .details-top {
+    height: 360px;
+            margin-top: 30px;
+}
+  
+   .custom {
+    display: block;
+       padding-top: 0;
+}
+    
+   .custom-right {
+       display: none;
+    }
+    
+    .custom-left {
+    width: 90%;
+    }
+    
+    .custom-top {
+    height: 420px;
+}
+    
+    .slider-top {
+    padding-top: 40px;
+}
+    
+.slider-top h2 {
+    font-size: 25px;
+    }
+    .slider-container {
+    margin-top: 0px;
+    }
+    
+    .comment p {
+    font-size: 15px;
+    line-height: 16px;
+}
+    
+    .order-text p {
+    font-size: 17px;
+}
+    .order-inside {
+    padding-top: 30px;
+}
+    .order-text {
+    width: 50%;
+}
+    
+    .main_but_right {
+    width: 90px;
+        font-size: 8px;
+    }
+    
+    .main_but_left {
+    width: 90px;
+        font-size: 8px;
+    }
+    
+    .order-but {
+    width: 40%;
+}
+    
+    .pricings-top {
+    padding-top: 30px;
+}
+    
+    .pricings-top h2 {
+    font-size: 25px;
+    }
+    
+    .pricings-bl {
+    width: 90%;
+        height: 460px;
+    }
+    
+    .pricings {
+    height: 2200px;
+}
+    
+    .footer-block {
+    width: 100%;
+    }
+    
+    .soc-media {
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+    }
+    
+    .soc-media a {
+    padding: 0;
+    } 
+}
+
+
+
+
