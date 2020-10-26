@@ -1,0 +1,76 @@
+.services {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.services-line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.services-block {
+    width: 33.333%;
+    margin: 0 10px 0 0;
+}
+
+.services-line i {
+    font-size: 50px;
+    line-height: 1.8;
+    color: #999;
+}
+
+.services-line h3 {
+    color: #393939;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.services-line p {
+    line-height: 1.8;
+    color: #999;
+    font-size: 14px;
+}
+
+
+
+
+
+
+@media (max-width: 1210px) {
+    
+    .services {
+    width: 850px;
+        padding: 20px 0;
+    }
+}
+
+
+@media (max-width: 900px) {
+    
+    .services {
+         padding: 0 0;
+        width: 90%;
+    }
+    .services-line {
+    flex-direction: column;
+    }
+    
+    .services-block {
+    width: 100%;
+    text-align: center;
+}
+  .banner_about {
+    padding: 100px 0 0 0 !important;
+}  
+    .banner_about h1 {
+    font-size: 50px;
+    }
+    
+    .main_about {
+    height: 400px;
+    } 
+}

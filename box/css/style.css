@@ -1,0 +1,592 @@
+body {
+margin: 0;
+padding:0;
+width: 100%;
+font-family: 'Poppins', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+padding:0;
+}
+
+.main {
+    height: 950px;
+}
+
+.menu-list {
+    background-color: black;
+    width: 100%;
+    height: 880px;
+    position: absolute;
+    top:-880px;
+    opacity: 0.95;
+    transition: 0.4s;
+}
+
+.menu-list-click {
+    background-color: black;
+    width: 100%;
+    height: 880px;
+    position: absolute;
+    top:70px;
+    opacity: 0.95;
+    transition: 0.4s;
+}
+
+.list {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.list h4 {
+    color: #ffbf00;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 17px;
+    margin-bottom: 40px;
+}
+
+.list ul {
+    padding: 0;
+}
+
+.list li {
+    list-style-type:none;
+    margin-bottom: 20px;
+}
+
+.list a {
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.list a:hover {
+    opacity: 0.7;
+}
+
+
+
+
+
+
+
+.top {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.logo img {
+    width: 70px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menu-str {
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.menu-ic {
+    position: relative;
+    width: 18px;
+    height: 2px;
+    background-color: black;
+    margin-left: 7px;
+    transition: background-color 0.7s;
+}
+
+.menu-ic::before {
+    content:'';
+    position: absolute;
+    top: -5px;
+    width: 18px;
+    height: 2px;
+    background-color: black;
+    transition: .7s;
+}
+
+.menu-ic::after {
+    content:'';
+    position: absolute;
+    top: 5px;
+    width: 18px;
+    height: 2px;
+    background-color: black;
+    transition: .7s;
+}
+
+
+.menu-ic.menu-ic-click {
+   background-color: transparent;  
+}
+
+.menu-ic.menu-ic-click::before {
+    transform:rotate(135deg);
+    top:0;  
+    transition:transform 0.7s ease-out;
+ }
+
+ .menu-ic.menu-ic-click::after {
+    transform:rotate(225deg);
+    top:0;  
+    transition:transform 0.7s ease-out;
+ }
+
+
+.banner {
+    position: relative;
+    margin-top: 350px;
+    text-align: center;
+}
+
+.banner h1 {
+    height: 150px;
+    font-weight: 700;
+    font-size: 130px;
+    line-height: 1.0;
+    color: #393939;
+    text-transform: uppercase;
+    margin-left: 550px;
+}
+
+
+.banner h2 {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #999;
+    line-height: 1.7;
+    font-weight: 500;
+    font-size: 14px;
+    margin-left: 80px;
+}
+
+.oval {
+    width: 22px;
+    height: 42px;
+    border: 2px solid #888;
+    border-radius: 15px;
+    margin: 270px auto 0;
+}
+
+.oval_ {
+    
+    opacity: 0;
+    width: 3px;
+    height: 3px;
+    background-color: #888;
+    margin: 5px auto;
+    animation: point  1.5s infinite ease-out;
+}
+
+@keyframes point {
+0% {
+    opacity: 1;
+}
+
+100% {
+    margin-top: 32px;
+    opacity: 0;
+}
+}
+
+
+
+.options {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;  
+    height: 100%;
+}
+
+.options-4 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+}
+
+.options-1 {
+    width: 50%; 
+    position: relative; 
+}
+
+.options-1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.options-2-2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.options-element {
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.options-element img {
+    width: 100%;
+    height: 100%;
+}
+
+.options-element-hover {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top:0;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: .3s;
+    overflow: hidden;
+}
+
+.options-1-hover {
+    width: 0; 
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    top:0;
+    transition: .3s;
+}
+
+.options-element:hover .options-element-hover {
+    width: 100%;
+}
+
+.options-1:hover .options-1-hover {
+    width: 100%;
+}
+
+
+
+
+
+.options-element-text {
+    overflow: hidden;
+    width: 70%;
+    margin: 130px auto 0;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.options-1-text {
+    overflow: hidden;
+    width: 70%;
+    margin: 300px auto 0;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+    transform: translateX(0); 
+}
+
+.options-element-text span { 
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.8;
+    transform: translateX(-100%); 
+    transition: .5s;
+    opacity:0;
+    white-space: nowrap;
+}
+
+.options-element-text p {
+    width: 100px;
+    background-color: #ffbf00;
+    color: #333;
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    line-height: 1.8;
+    padding: 5px 20px;
+    border-radius: 25px;
+    margin: 10px auto;
+    border:0;
+    transform: translateX(-135%);
+    transition: .5s;
+    opacity:0;
+}
+
+.options-element:hover .options-element-text span{
+    transform: translateX(0);
+    opacity:1;
+}
+
+.options-element:hover .options-element-text p{
+    transform: translateX(0);
+    opacity:1;
+}
+
+.options-1-text span { 
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.8;
+    transform: translateX(-100%);
+    transition: .5s;
+    opacity:0;
+    white-space: nowrap;
+}
+
+.options-1-text p {
+    width: 100px;
+    background-color: #ffbf00;
+    color: #333;
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    line-height: 1.8;
+    padding: 5px 20px;
+    border-radius: 25px;
+    margin: 10px auto;
+    border:0;
+    transform: translateX(-135%);
+    transition: .5s;
+    opacity:0;
+}
+
+.options-1:hover .options-1-text span{
+    transform: translateX(0);
+    opacity:1;
+}
+
+.options-1:hover .options-1-text p{
+    transform: translateX(0);
+    opacity:1;
+}
+
+
+
+
+
+
+
+
+
+footer {
+    width: 100%;
+    height: 70px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    color: #ccc;
+    line-height: 70px;
+    font-size: 14px;
+}
+
+
+
+.up {
+    width: 40px;
+    height: 40px;
+    right: 15px;
+    bottom: 15px;
+    position: fixed;
+    background: rgba(255, 191, 0);
+    opacity: 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.up-active {
+    opacity: 0.8;
+}
+
+.up:hover {
+    opacity:1;
+}
+
+.up i {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 16px;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 1500px) {
+    .banner {
+    margin-top: 200px;
+}
+    
+ .banner h1 {
+    font-size: 120px;
+    margin-left: 0;
+}   
+    
+  .banner h2 {
+    margin-left: 0;
+}  
+    
+  .oval {
+    width: 22px;
+    margin: 150px auto 0;
+}  
+    
+ .main {
+    height: 690px;
+}   
+    
+ .menu-list-click {
+    height: 620px;   
+    }
+}
+
+
+
+
+
+@media (max-width: 1220px) {
+    .banner h1 {
+    font-size: 85px;
+    }
+    
+    .options-element-text {
+    margin: 75px auto 0;
+    }
+    
+    .options-element-text span {
+    font-size: 15px;
+    }
+    
+    .options-1-text {
+    margin: 200px auto 0;
+    }
+}
+
+
+
+@media (max-width: 1000px) {
+    
+    .banner h1 {
+    font-size: 50px;
+        height: 90px;
+    }
+    
+    .banner h2 {
+    font-size: 13px;
+        line-height: 15px;
+    }
+    
+    .main {
+    height: 510px;
+}
+    
+   .menu-list-click {
+    height: 440px;
+} 
+    
+   .banner {
+    margin-top: 100px;
+} 
+    
+  .options-element-text {
+    margin: 50px auto 0;
+}  
+    
+    .options-1-text {
+    margin: 110px auto 0;
+}
+    
+    .options-element-text span {
+    font-size: 8px;
+}
+   .options-element-text p {
+    width: 50px;
+    font-size: 7px;
+} 
+}
+
+
+
+
+@media (max-width: 600px) {
+    
+    .banner h1 {
+    font-size: 25px;
+        height: 55px;
+    }
+    
+    .banner h2 {
+    font-size: 10px;
+        line-height: 13px;
+    }
+    
+    .main {
+    height: 400px;
+}
+    
+   .menu-list-click {
+    height: 330px;
+} 
+    
+   .banner {
+    margin-top: 80px;
+} 
+    
+    .oval {
+    margin: 75px auto 0;
+}
+    .list {
+    margin-top: 50px;
+}
+    
+     .options-element-text {
+   display: none;
+}  
+    
+    .options-1-text {
+   display: none;
+}
+    
+    .options-element-text span {
+   display: none;
+}
+   .options-element-text p {
+   display: none;
+}   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
