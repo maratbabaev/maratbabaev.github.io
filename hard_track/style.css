@@ -22,7 +22,7 @@ body {/*
 .go {
     animation-name: go;
     animation-timing-function: linear;
-    animation-duration: 21.4s;
+    animation-duration: 21s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
