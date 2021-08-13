@@ -1,0 +1,16 @@
+.row {
+    display: flex;
+}
+
+.item {
+    width: 50px;
+    height: 50px;
+    border:1px solid #000;
+}
+
+.parent {
+    width: 210px;
+    margin: 100px auto;
+}
+
+
