@@ -30,14 +30,13 @@ for (let i = 0; i < checkboxCard.length; i++) {
     checkboxCard[i].addEventListener('click', function(){
         checkboxCard[i].classList.toggle('checkbox__active')
         checkedOn(checkboxCard[i])
-        if(checkboxCard[i].classList.contains('checkbox__active')) {
+        if (checkboxCard[i].classList.contains('checkbox__active')) {
             c++
+            if (c % 4 == 0) {
+                checkboxMain.classList.add('checkbox__active')
+            }
         } else {
-            c--
-        }
-        if (c >= 4) {
-            checkboxMain.classList.add('checkbox__active')
-        } else {
+            c-- 
             checkboxMain.classList.remove('checkbox__active')
         }
         checkedOn(checkboxMain)
