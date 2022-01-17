@@ -1,48 +1,36 @@
-let checkboxMain = document.querySelector('.checkbox-main')
-let checkboxCard = document.querySelectorAll('.checkbox-card')
+let checkbox = document.querySelectorAll('.checkbox')
 let inputBlock = document.querySelector('.mail__input')
 let input = inputBlock.querySelector('input')
 let btn = inputBlock.querySelector('.btn')
 let placeholder = inputBlock.querySelector('.placelolder')
 let errorText = inputBlock.querySelector('.error-text')
-let c = 0
 
 
-
-
-checkboxMain.addEventListener('click', function(){
-    checkboxMain.classList.toggle('checkbox__active')
-    checkedOn(checkboxMain)
-    checkboxCard.forEach(elem => {
-        if (checkboxMain.classList.contains('checkbox__active')) {
-            elem.classList.add('checkbox__active')
-        } else {
-            elem.classList.remove('checkbox__active')
-        }
-        checkedOn(elem)
-    })
-})
-
-
-
-
-for (let i = 0; i < checkboxCard.length; i++) {
-    checkboxCard[i].addEventListener('click', function(){
-        checkboxCard[i].classList.toggle('checkbox__active')
-        checkedOn(checkboxCard[i])
-        if (checkboxCard[i].classList.contains('checkbox__active')) {
-            c++
-            if (c % 4 == 0) {
-                checkboxMain.classList.add('checkbox__active')
+for (let i = 0; i < checkbox.length; i++) {
+    checkbox[i].addEventListener('click', function(){
+        if (checkbox[i].classList.contains('checkbox-main')) {
+            checkbox[i].classList.toggle('checkbox__active')
+            for (let j = 0; j < checkbox.length; j++) {
+                if (checkbox[i].classList.contains('checkbox__active')) {
+                    checkbox[j].classList.add('checkbox__active')
+                } else {
+                    checkbox[j].classList.remove('checkbox__active')
+                }
             }
         } else {
-            c-- 
-            checkboxMain.classList.remove('checkbox__active')
+            checkbox[i].classList.toggle('checkbox__active')
+            let checkboxActive = document.querySelectorAll('.checkbox-card.checkbox__active')
+            let checkboxMain = document.querySelector('.checkbox-main')
+            if (checkboxActive.length == 4) {
+                checkboxMain.classList.add('checkbox__active')
+            } else {
+                checkboxMain.classList.remove('checkbox__active')
+            }
+            checkedOn(checkboxMain)
         }
-        checkedOn(checkboxMain)
+        checkedOn(checkbox[i])
     })
 }
-
 
 
 function checkedOn(check) {
@@ -53,9 +41,6 @@ function checkedOn(check) {
         input.checked = false
     }
 }
-
-
-
 
 
 input.addEventListener('focusin', function(){
@@ -70,9 +55,6 @@ input.addEventListener('focusout', function(){
         inputBlock.classList.remove('input__active')
     }
 })
-
-
-
 
 
 
