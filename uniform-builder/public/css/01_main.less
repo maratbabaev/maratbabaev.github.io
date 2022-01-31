@@ -1,0 +1,469 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+body {
+  font-family: 'Montserrat';
+  background: linear-gradient(0deg, #F6F7F9, #F6F7F9);
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  padding: 0;
+}
+
+
+img,
+header,
+footer,
+section {
+  display: block;
+}
+
+
+button {
+  background: none;
+  border: 0;
+}
+
+
+.wrap {
+  position: relative;
+}
+
+
+
+
+
+
+
+
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top:32px;
+  left:50%;
+  width: 90%;
+  margin-left: -45%;
+  z-index: 9;
+}
+
+
+.burger {
+  width: 33px;
+  cursor: pointer;
+}
+
+
+.burger-line {
+  width: 100%;
+  height: 3px;
+  background: #000000;
+  margin-top: 5px;
+}
+
+
+.burger-line:first-child {
+  margin-top: 0;
+}
+
+
+
+
+
+
+
+
+.top-page {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.title {
+  font-size: 36px;
+line-height: 125%;
+color: #333333;
+font-weight: normal;
+text-align: center;
+}
+
+
+
+.select-sport__list {
+  margin: 0 auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(656px + 32px);
+}
+
+
+
+.select-sport__item {
+  display: flex;
+  background: #F6F7F9;
+border: 1px solid #000000;
+align-items: center;
+justify-content: center;
+font-weight: 600;
+font-size: 18px;
+line-height: 1;
+color: #333333;
+width: 197px;
+height: 86px;
+cursor: pointer;
+margin: 32px 16px 0;
+transition: 0.3s;
+}
+
+
+.select-sport__item:hover {
+  background: #292A2C;
+  border: 1px solid #292A2C;
+  color: #FFFFFF;
+}
+
+
+
+
+
+
+
+.select-colors {
+  display: none;
+}
+
+
+.subtitle {
+  font-weight: normal;
+font-size: 18px;
+line-height: 22px;
+line-height: 120%;
+margin-top: 32px;
+text-align: center;
+color: #333333;
+}
+
+
+
+
+
+.select-colors__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: calc(782px + 32px);
+  margin: 0 auto;
+}
+
+
+
+.color-item {
+  width: 42px;
+height: 42px;
+border-radius: 50%;
+margin: 32px 16px 0;
+cursor: pointer;
+transition: 0.3s;
+display: flex;
+align-items: center;
+justify-content: center;
+img {
+  opacity: 0;
+  transition: 0.3s;
+}
+}
+
+.color-item:hover {
+  opacity: 0.5;
+}
+
+
+.color-item__active {
+  pointer-events: none;
+  img {
+    opacity: 1;
+  }
+}
+
+
+
+
+.color0 {
+  background: #FFFFFF;
+}
+
+.color1 {
+  background: #121212;
+}
+
+.color2 {
+  background: #646466;
+}
+
+.color3 {
+  background: #A1A7AC;
+}
+
+.color4 {
+  background: #BABEC2;
+}
+
+.color5 {
+  background: #530015;
+}
+
+.color6 {
+  background: #840129;
+}
+
+.color7 {
+  background: #9C022C;
+}
+
+.color8 {
+  background: #D51A55;
+}
+
+.color9 {
+  background: #DB77B0;
+}
+
+.color10 {
+  background: #FCE6E9;
+}
+
+
+.color11 {
+  background: #FBB566;
+}
+
+.color12 {
+  background: #E4701E;
+}
+
+.color13 {
+  background: #F25B21;
+}
+
+.color14 {
+  background: #2F0811;
+}
+
+.color15 {
+  background: #653300;
+}
+
+.color16 {
+  background: #FFE117;
+}
+
+.color17 {
+  background: #FEC71D;
+}
+
+.color18 {
+  background: #FDBB2E;
+}
+
+.color19 {
+  background: #C49608;
+}
+
+.color20 {
+  background: #F5E5D2;
+}
+
+.color21 {
+  background: #F9F1DB;
+}
+
+.color22 {
+  background: #DBC893;
+}
+
+.color23 {
+  background: #B58E6A;
+}
+
+.color24 {
+  background: #ACD589;
+}
+
+.color25 {
+  background: #03AD61;
+}
+
+.color26 {
+  background: #006C46;
+}
+
+.color27 {
+  background: #004536;
+}
+
+.color28 {
+  background: #00A4A3;
+}
+
+.color29 {
+  background: #98BBDA;
+}
+
+.color30 {
+  background: #67AFDD;
+}
+
+.color31 {
+  background: #1C94D2;
+}
+
+.color32 {
+  background: #00629B;
+}
+
+.color33 {
+  background: #002352;
+}
+
+.color34 {
+  background: #00021E;
+}
+
+.color35 {
+  background: #5E449B;
+}
+
+.color36 {
+  background: #7C7DBC;
+}
+
+.color37 {
+  background: #EA4498;
+}
+
+.color38 {
+  background: #00B6DE;
+}
+
+.color39 {
+  background: #C1D72F;
+}
+
+.color40 {
+  background: #FCF26F;
+}
+
+.color41 {
+  background: #F68E1E;
+}
+
+
+
+
+
+
+
+
+
+
+.next {
+  opacity: 0.5;
+  pointer-events: none;
+  position: absolute;
+  display: flex;
+  align-items: center;
+ right: 0;
+ top:50%;
+ margin-top: -27px;
+ background: #FFFFFF;
+ width: 193px;
+height: 54px;
+font-weight: 600;
+font-size: 18px;
+line-height: 1;
+cursor: pointer;
+color: #333333;
+padding-left: 48px;
+clip-path: polygon(16px 0, 100% 0, 100% 100%, 0 100%);
+}
+
+
+.next-icons {
+  margin-left: 12px;
+  display: flex;
+  align-items: center;
+  svg {
+    margin-right: 17px;
+    path { 
+      fill: rgba(0,0,0,0.4);
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+    }
+  }
+}
+
+
+
+.next__active {
+  opacity: 1;
+  pointer-events: auto;
+  .next-icons svg:nth-child(1) {
+    path {
+      animation-name: next1;
+    }
+  }
+  
+  .next-icons svg:nth-child(2) {
+    path {
+      animation-name: next2;
+    }
+  }
+  
+  .next-icons svg:nth-child(3) {
+    path {
+      animation-name: next3;
+    }
+  }
+}
+
+
+@keyframes next1 {
+30% {
+    fill: rgba(0,0,0,1);
+}
+}
+
+
+@keyframes next2 {
+  70% {
+    fill: rgba(0,0,0,1);
+}
+  }
+
+
+  @keyframes next3 {
+    100% {
+      fill: rgba(0,0,0,1);
+  }
+    }
+
+
+
